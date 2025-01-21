@@ -1,1 +1,1 @@
-labs for the first few weeks
+Labs for first weeks
