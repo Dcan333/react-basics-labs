@@ -38,3 +38,7 @@ div {
 .description{
   color: red;
 }
+
+.priority{
+  font-weight: bold;
+}
