@@ -14,12 +14,6 @@ function App() {
     ]
   });
 
-  const [formState, setFormState] = useState({
-    title: "",
-    description: "",
-    deadline: ""
-  });
-
   const doneHandler = (taskIndex) => {
     const tasks = [...taskState.tasks];
     tasks[taskIndex].done = !tasks[taskIndex].done;
@@ -33,6 +27,14 @@ function App() {
     setTaskState({ tasks });
   }
 
+
+  const [formState, setFormState] = useState({
+    title: "",
+    description: "",
+    deadline: "",
+    priority: ""
+  });
+
   const formChangeHandler = (event) => {
     let form = { ...formState };
 
@@ -45,6 +47,9 @@ function App() {
         break;
       case "deadline":
         form.deadline = event.target.value;
+        break;
+      case "priority":
+        form.priority = event.target.value;
         break;
       default:
         form = formState;
