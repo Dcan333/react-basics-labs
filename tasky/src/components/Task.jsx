@@ -6,8 +6,8 @@ const Task = (props) => {
         <div className="card" style={{
             backgroundColor: props.done ? 'lightgrey' :
                 props.priority === 'high' ? '#ff8080' :
-                    props.priority === 'medium' ? '#ffcc80' :
-                        props.priority === 'low' ? 'lightgreen' : '#5bb4c4'
+                props.priority === 'medium' ? '#ffcc80' :
+                props.priority === 'low' ? 'lightgreen' : '#5bb4c4'
         }}>
             <p className="title">{props.title}</p>
             <p>Due: {props.deadline}</p>
